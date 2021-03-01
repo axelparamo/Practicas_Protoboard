@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>paginas web</title>
+    <style>
+      .text{
+        text-align: center;
+      }
+      body{
+        background-color: #71554F;
+        font-family: sans-serif;
+      }
+
+      .container{
+        margin: auto;
+        background-color: #71554F;
+        width: 100%;
+        height: 100%;
+      }
+
+      ul, li {
+          padding: 0;
+          margin: 0;
+          list-style: none;
+      }
+
+      ul.slider{
+        position: relative;
+        width: 800px;
+        height: 500px;
+      }
+
+      ul.slider li {
+          position: absolute;
+          left: 35%;
+          top: 0px;
+          opacity: 0;
+          width: inherit;
+          height: inherit;
+          transition: opacity .1s;
+          background:#71554F;
+      }
+
+      ul.slider li img{
+        position: absolute;
+        top: 0%;
+        width: 150%;
+        height: 90%;
+        object-fit: cover;
+      }
+
+      ul.slider li:first-child {
+          opacity: 1; /*Mostramos el primer <li>*/
+      }
+
+      ul.slider li:target {
+          opacity: 1; /*Mostramos el <li> del enlace que pulsemos*/
+      }
+
+      .menu{
+        text-align: center;
+        margin: 20px;
+      }
+
+      .menu li{
+        display: inline-block;
+        text-align: center;
+      }
+
+      .menu li a{
+        top: 80%;
+        display: inline-block;
+        color: white;
+        text-decoration: none;
+        background-color: grey;
+        padding: 10px;
+        width: 20px;
+        height: 20px;
+        font-size: 20px;
+        border-radius: 100%;
+      }
+
+    </style>
+  </head>
+<body>
+  <h2 class="text"> Practicas</h2>
+  <div class="container">
+
+  <ul class="slider">
+    <li id="slide0">
+  <iframe width="100%" height="100%" src="https://www.youtube.com/embed/LOeYLYQoT_8" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </li>
+    <li id="slide1">
+    <iframe width="100%" height="100%" src="https://www.youtube.com/embed/Juzoqm4ezXo" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </li>
+    <li id="slide2">
+    <iframe width="100%" height="100%" src="https://www.youtube.com/embed/kReEX0tB5V8" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </li>
+    <li id="slide3">
+        <iframe width="100%" height="100%" src="https://www.youtube.com/embed/3pL5vzgmrkU" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </li>
+    <li id="slide4">
+      <iframe width="100%" height="100%" src="https://www.youtube.com/embed/nrp7oX3ouvQ" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </li>
+    <li id="slide5">
+      <iframe width="100%" height="100%" src="https://www.youtube.com/embed/kodBMjFtboQ" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </li>
+    <li id="slide6">
+    <iframe width="100%" height="100%" src="https://www.youtube.com/embed/YYIdD3Zaba8" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <li id="slide7">
+      <iframe width="100%" height="100%" src="https://www.youtube.com/embed/UyjZExmetJc" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </li>
+  </ul>
+
+  <ul class="menu">
+    <li>
+      <a href="#slide0">0</a>
+    </li>
+    <li>
+      <a href="#slide4">4</a>
+    </li>
+    <li>
+      <a href="#slide1">1</a>
+    </li>
+     <li>
+      <a href="#slide2">2</a>
+    </li>
+    <li>
+      <a href="#slide3">3</a>
+    </li>
+    <li>
+      <a href="#slide5">5</a>
+      <li>
+        <a href="#slide6">6</a>
+      </li>
+      <li>
+        <a href="#slide7">7</a>
+      </li>
+  </ul>
+
+</div>
+</body>
+</html>
